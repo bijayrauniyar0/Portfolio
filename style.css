@@ -46,6 +46,7 @@ nav ul li a:hover{
     width: 40%;
 }
 .leftSection{
+    position: relative;
     margin: 100px auto 30px;
     font-size: 3rem;
     
@@ -55,6 +56,30 @@ nav ul li a:hover{
 }
 .purple{
     color:rgb(46, 137, 211) ;
+}
+#typed-output{
+    min-height: 70px;
+}
+.leftSection .resume a{
+    position: absolute;
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.leftSection .fa-regular{
+    font-size: 26px;
+    transition: 0.3s ease-in-out;
+}
+.leftSection .resume a:hover{
+    background-color: rgb(23, 129, 161);
+}
+.leftSection .resume a:hover .fa-regular{
+   transform: scale(1.3);
+   /* margin-top: 10px; */
+
 }
 .rightSection img{
     width: 68%;
