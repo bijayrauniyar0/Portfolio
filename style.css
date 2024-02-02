@@ -295,7 +295,8 @@ footer{
     color: rgba(211, 208, 208, 0.801);
     overflow: hidden;
     text-align: center;
-    margin-top: 165px;
+    margin-top: 162px;
     background-color: black;
-    height: 37px;
+    height: 35px;
+    padding: 4px;
 }
