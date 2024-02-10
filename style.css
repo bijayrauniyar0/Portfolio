@@ -160,11 +160,10 @@ h1{
     display: flex;
     flex-direction: row;
     margin: 40px auto;
-    flex-wrap: wrap;
 }
 
 .image-box{
-    margin: 0 60px 0 120px;
+    margin: 0 30px;
 }
 
 .image-box img{
