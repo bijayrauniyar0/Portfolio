@@ -17,6 +17,10 @@ nav{
     background-color: white;
     font-weight: 500;
 }
+nav .left{
+    position: absolute;
+    left: 20px;
+}
 nav ul{
     display: flex;
     justify-content: center;
@@ -35,21 +39,322 @@ nav ul li a:hover{
     text-decoration: none;
     color: rgb(169,53,214);
 }
+
+.toggler{
+    position: absolute;
+    right: 40px;
+    font-size: 28px;
+    display: none;
+}
+.drop-menu{
+    width: 250px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 10%;
+    top: 6%;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    height: 0;
+    overflow: hidden;
+    opacity: none;
+    transition: 0.3s;
+ 
+
+}
+.drop-menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.drop-menu ul li{
+    padding: 7px 0;
+}
+.drop-menu.active{
+    height: 165px;
+}
+
+@media(max-width:992px){
+    .right{
+        display: none;
+    }
+    .leftSection{
+       top: 0;
+    }
+    .leftSection .white, .leftSection .purple{
+        font-size: 2rem;
+    }
+    .toggler{
+        display: block;
+    }
+    .drop-menu{
+        display: block;
+    }
+    #home .leftSection{
+        top: 10px;
+        font-size: 14px;
+    }
+    #home .leftSection .resume a{
+        font-size: 14px;
+    }
+    #home .leftSection .resume a i{
+        font-size: 14px;
+    }
+    .skills-container{
+        margin-top: 50px;
+    }
+    .skills{
+        margin-left: 10px;
+    }
+    .skills .circle,
+    .skills .circle2,
+    .skills .circle3,
+    .skills .circle4,
+    .skills .circle5{
+        width: 70px;
+        height: 70px;
+    }
+    .skills .desc{
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    #projects .projects-main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #projects .detail-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #projects .image-box img{
+        width: 220px;
+    }
+    #projects .link a{
+        font-size: 16px;
+    }
+    #projects .details-links h2{
+        font-size: 18px;
+    }
+    #about p{
+        font-size: 12px;
+    }
+    #about img{
+        aspect-ratio: 16/28;
+        object-fit: cover;
+    }
+}
+
+@media(max-width:768px){
+    .leftSection .white, .leftSection .purple{
+        font-size: 1rem;
+    }
+    #home .leftSection{
+        font-size: 10px;
+    }
+    #home .leftSection .resume{
+        margin-top: -40px;
+    }
+    #home .leftSection .resume a{
+        font-size: 10px;
+    }
+    #home .leftSection .resume a i{
+        font-size: 12px;
+    }
+    .skills-container{
+        margin-top: 30px;
+    }
+    .skills .circle,
+    .skills .circle2,
+    .skills .circle3,
+    .skills .circle4,
+    .skills .circle5{
+        width: 50px;
+        height: 50px;
+    }
+    .skills .desc{
+        font-size: 10px;
+    }
+    #projects .projects-main{
+        right: 80px;
+    }
+    #projects .detail-container{
+      margin: 20px 5px;
+    }
+    #projects .image-box img{
+        width:150px;
+    }
+    #projects .link a{
+        font-size: 14px;
+    }
+    #projects .details-links h2{
+        font-size: 16px;
+    }
+    #about p{
+        font-size: 7px;
+        padding-top: 10px;
+    }
+    #about img{
+        aspect-ratio: 9/16;
+        object-fit: cover;
+        width: 180px;
+    }
+    #about .left-container{
+        right: 30px;
+    }
+    #about .right-container{
+        right: 40px;
+    }
+    body h1{
+        font-size: 1rem;
+    }
+    body .text-gray{
+        font-size: 12px;
+    }
+    .circle,.circle2,.circle3,.circle4{
+        width: 50px;
+    }
+    body #skills-section{
+        height: 50vh;
+    }
+    .skills img{
+        width: 40px;
+        height: 40px;
+    }
+    .skills .desc{
+        font-size: 10px;
+    }
+    .skills-container:not(:first-child){
+        position: relative;
+        bottom: 140px;
+    }
+    .skills-container .skills.last{
+        position: relative;
+        bottom: 140px;
+    }
+    .skills-container .skills:first-child{
+        margin-right: 50px;
+        position: relative;
+        right: 50px;
+    }
+    #contact{
+        height: 20vh;
+    }
+    #contact .page-links a{
+        font-size: 8px;
+    }
+    #contact .copy-right{
+        width: 98%;
+        top: 60%;
+    }
+
+}
+@media(max-width: 1280px){
+    .right{
+        display: none;
+    }
+    .leftSection{
+       top: 0;
+    }
+    .leftSection .white, .leftSection .purple{
+        font-size: 2.2rem;
+    }
+    .toggler{
+        display: block;
+    }
+    .drop-menu{
+        display: block;
+    }
+    #home .leftSection{
+        top: 14px;
+        font-size: 14px;
+    }
+    #home .leftSection .resume a{
+        font-size: 16px;
+    }
+    #home .leftSection .resume a i{
+        font-size: 16px;
+    }
+    .skills-container{
+        margin-top: 50px;
+    }
+    .skills{
+        margin-left: 10px;
+    }
+    .skills .circle,
+    .skills .circle2,
+    .skills .circle3,
+    .skills .circle4,
+    .skills .circle5{
+        width: 85px;
+        height: 85px;
+    }
+    .skills .desc{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    #projects .projects-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #projects .detail-container{
+        display: flex;
+        flex-direction: row;
+    }
+    #projects .image-box img{
+        width: 240px;
+    }
+    #projects .link a{
+        font-size: 16px;
+    }
+    #projects .details-links h2{
+        font-size: 20pxpx;
+    }
+    #about p{
+        font-size: 14px;
+    }
+    #about img{
+        aspect-ratio: 16/28;
+        object-fit: cover;
+    }
+
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+h1{
+    font-size: 1.8rem;
+}
 #home{
     display: flex;
     justify-content: space-around;
     background-image: url(images/bg.jpg);
     background-size: cover;
-    height: 70vh;
+    width: 100%;
+    aspect-ratio: 21/7;
 }
-#home > div{
+
+#home>div {
     width: 40%;
 }
-.leftSection{
+
+.leftSection {
     position: relative;
-    margin: 100px auto 30px;
     font-size: 3rem;
-    
+    top: 50px;
+    width: 70%;
+
 }
 .white{
     color: white;
@@ -86,80 +391,142 @@ nav ul li a:hover{
     margin: 30px 30px 20px 60px;
 
 }
-#experience{
-    max-width: 80vw;
-    margin: 20px 80px;
-    height: 70vh;
-}
-#experience .line, #projects  .line, #about .line{
-    width: 9vw;
-    height: 3px;
-    border-radius: 8px;
-    background-color: rgb(20, 187, 70);
-    margin-top: 3px;
-}
 hr{
     border: 0;
     background: rgb(3, 110, 231);
     height: 2px;
     margin: 20px 40px
 }
-.text-gray{
-    color: rgb(62, 62, 65);
-    font-size: 12px;
-    margin: 0;
+.line{
+    width: 9vw;
+    height: 3px;
+    border-radius: 8px;
+    background-color: rgb(20, 187, 70);
+    margin-top: 3px;
 }
-h1{
-    font-size: 1.9rem;
-    margin: 0;
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+#skills-section{
+    max-width: 80vw;
+    margin: 20px 80px;
+    height: auto;
 }
-#experience .box{
-    background: black;
-    width: 80vw;
-    height: 2px;
-    margin: 60px 80px;
+.skills-top{
     display: flex;
+    flex-direction: column;
 }
-.top-img{
-    width: 23px;
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    height: 25vh;
+    margin-left: 30px;
+
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 45%;
+}
+.skills.last{
+    margin: 0 auto;
+}
+.circle,.circle2{
+    margin-top: 30px;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(from 90deg, rgba(220, 239, 249, 0) 0%, rgba(206, 233, 247, 0) 9%, #48abe0 10%);
+    padding: 7px;
+    box-sizing: content-box;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(180deg);
+}
+.circle4,.circle3{
+    margin-top: 30px;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(from 90deg, rgba(220, 239, 249, 0) 0%, rgba(206, 233, 247, 0) 18%, #48abe0 18%);
+    padding: 7px;
+    box-sizing: content-box;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(180deg);
+}
+.circle5{
+    margin-top: 30px;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* border:  10px solid transparent; */
+    background: conic-gradient(from 90deg,rgba(220, 239, 249, 0) 0%, rgba(206, 233, 247, 0) 15%, #48abe0 16%);
+    padding: 7px;
+    box-sizing: content-box;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(180deg);
+}
+.circle img,
+.circle2 img,
+.circle3 img,
+.circle4 img,
+.circle5 img{
     position: relative;
-    top: -29px;
-    left: -8px;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    transform: rotate(-180deg);
 }
-#experience .vertical{
-    height: 93px;
-    width: 1px;
-    background: black; 
-    margin: 0 100px;   
+.desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
 }
-.vertical-title{
-    width: 23px;
-    position: relative;
-    top: 65px;
-    width: 150px;
-    font-weight: 600;
-}
-.title-desc{
-    width: 23px;
-    position: relative;
-    top: 65px;
-    width: 150px;
-    color: rgb(66, 66, 77);
-    font-size: 12px;
-    /* text-align: justify; */
-    font-weight: 500;
-    padding-top: 8px;
-}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
 /* projects section */
 #projects{
     max-width: 80vw;
     margin: 20px 80px;
     height: auto;
 }
+.projects-main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 0;
+}
 .detail-container{
     display: flex;
     flex-direction: row;
-    margin: 40px auto;
+    margin: 40px 10px;
 }
 
 .image-box{
@@ -207,11 +574,12 @@ h1{
     display: flex;
     flex-direction: row;
     margin: auto 30px;
-    justify-content: space-around;
 }
 .left-container{
-    margin: 20px auto;
+    position: relative;
+    margin: 20px 0;
     width: 55%;
+    right: 20px;
 }
 .left-container p{
     text-align: justify;
@@ -219,8 +587,11 @@ h1{
 }
 .right-container{
     /* position: absolute; */
-    margin: 40px auto;
+    margin: 40px 0;
     width: 40%;
+    position: relative;
+
+    
 }
 .right-container img{
     position: relative;
@@ -291,12 +662,13 @@ footer{
     transform: scale(1.2);
 }
 .copy-right{
-    /* position: absolute; */
+    position: relative;
     color: rgba(211, 208, 208, 0.801);
     overflow: hidden;
     text-align: center;
-    margin-top: 162px;
     background-color: black;
     height: 35px;
     padding: 4px;
+    width: 100%;
+    top: 80%;
 }
