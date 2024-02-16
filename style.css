@@ -7,6 +7,7 @@ body{
     background-color: beige;
     color: black;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
     
 }
 nav{
@@ -252,7 +253,7 @@ nav ul li a:hover{
     }
 
 }
-@media(max-width: 1280px){
+/* @media(max-width: 1280px){
     .right{
         display: none;
     }
@@ -323,7 +324,7 @@ nav ul li a:hover{
         object-fit: cover;
     }
 
-}
+} */
 
 
 
